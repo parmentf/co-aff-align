@@ -12,7 +12,7 @@ npm i
 
 > :warning: Attention, comme dans toute utilisation de
 > [@ezs/conditor](https://inist-cnrs.github.io/ezs/#/plugin-conditor), il faut
-> créer, dans le répertoire d'où le script est lancé (ou plus vers la racine) un
+> créer dans le répertoire d'où le script est lancé (ou plus vers la racine) un
 > fichier `.env`.
 >
 > Seuls les scripts utilisant la commande
@@ -31,7 +31,7 @@ npx ezs scripts/affAlign.ini < data/10-notices-conditor-hal.json
 Ce script prend un tableau JSON de documents Conditor, et ajoute une clé
 `[].authors[].affiliations[].conditorRnsr[]`, contenant les identifiants RNSR
 repérés grâce au champ `address` d'une affiliation d'auteur et à l'année de
-publication du document `xPublicationDate`.
+publication du document, `xPublicationDate`.
 
 #### computeRecall.ini
 
@@ -47,4 +47,4 @@ $ npx ezs scripts/computeRecall.ini < data/10-notices-conditor-hal.json
 Ce script fait la même chose que [affAlign.ini](#affalignini), et compte le nombre
 d'identifiants RNSR déjà fourni dans la clé `rnsr` qui sont aussi retrouvés dans
 `conditorRnsr`, le nombre total d'éléments retrouvés dans `conditorRnsr`, et
-fourni le taux de rappel dans `recall`.
+fournit le taux de rappel dans `recall`.
