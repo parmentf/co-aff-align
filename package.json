@@ -1,0 +1,30 @@
+{
+  "name": "co-aff-align",
+  "version": "1.0.0",
+  "description": "Script d'alignement des affiliations Conditor avec le RNSR",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parmentf/co-aff-align.git"
+  },
+  "keywords": [
+    "conditor",
+    "rnsr",
+    "affiliations",
+    "alignement"
+  ],
+  "author": "François Parmentier <francois.parmentier@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/parmentf/co-aff-align/issues"
+  },
+  "homepage": "https://github.com/parmentf/co-aff-align#readme",
+  "dependencies": {
+    "@ezs/basics": "^1.7.3",
+    "@ezs/conditor": "^1.9.18",
+    "@ezs/core": "^1.21.0"
+  }
+}
